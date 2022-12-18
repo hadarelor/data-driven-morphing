@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Smooth Image Sequences for Data-driven Morphing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+
+<body>
+
+<div class="title">
+	Smooth Image Sequences for Data-driven Morphing
+</div> 
+<div>
+	<table align="center">
+	<tr>
+		<td align='center' class='author'><a href='http://www.cs.tau.ac.il/~averbuch1/' target='new' onClick="stc(this, 1)">Hadar Averbuch-Elor</a></td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='author'><a href='http://www.cs.tau.ac.il/~dcor/' target='new' onClick="stc(this, 2)">Daniel Cohen-Or</a></td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='author'><a href='http://johanneskopf.de/' target='new' onClick="stc(this, 3)">Johannes Kopf</a></td>
+	</tr>
+	<tr>
+		<td align='center' class='affiliation'>Tel Aviv University</td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='affiliation'>Tel Aviv University</td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td align='center' class='affiliation'>Facebook</td>
+	</tr>
+	</table>
+</div>
+
+<div class="conference">
+	Appearing in <a href="http://www.eurographics2016.pt/">Eurographics 2016</a>
+</div>
+
+<div>
+	<iframe width="720" height="405" src="https://www.youtube.com/embed/iAdo1mVULvU" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+Smoothness is a quality that feels aesthetic and pleasing to the human eye. We present an algorithm for finding "as-smooth-as-possible" sequences in image collections.
+</p>
+<p>
+In contrast to previous work, our method does not assume that the images show a common 3D scene, but instead may depict different object instances with varying deformations, and significant variation in lighting, texture, and color appearance.
+Our algorithm does not rely on a notion of camera pose, view direction, or 3D representation of an underlying scene, but instead directly optimizes the smoothness of the apparent motion of local point matches among the collection images.
+We increase the smoothness of our sequences by performing a global similarity transform alignment, as well as localized geometric wobble reduction and appearance stabilization.
+</p>
+<p>
+Our technique gives rise to a new kind of image morphing algorithm, in which the in-between motion is derived in a data-driven manner from a smooth sequence of real images without any user intervention.
+This new type of morph can go far beyond the ability of traditional techniques. 
+</p>
+<p>
+We also demonstrate that our smooth sequences allow exploring large image collections in a stable manner.
+</p>
+
+<!-- <h2>Results</h2> -->
+
+
+<h2>Resources</h2>
+<a href="elor2016_morphing.pdf">Paper</a> (PDF)<br />
+<a href="Datasets.zip">Datasets</a> <br />
+<!--  <p>
+<a href="wcseg.pdf">Paper</a> (PDF, 7MB)<br />
+<!-- <a href="http://dx.doi.org/10.1145/2461912.2461924">DOI</a> 
+<a href="wcseg.zip">MATLAB Code</a><br />
+<a href="data.zip">Datasets</a> (point clouds and incremental views in obj and ply formats)<br />
+<a href="results.zip">Results</a> (segmentation results in off and ply formats)<br />
+</p> -->
+
+<h2>BibTex Reference</h2>
+<pre>@article{elor2016morph,
+author = {Hadar Averbuch-Elor and  Daniel Cohen-Or and Johannes Kopf},
+title = {Smooth Image Sequences for Data-driven Morphing},
+journal = {Computer Graphics Forum, (Proceedings Eurographics 2016)},
+volume = {35},
+number = {2},
+pages = {to appear},
+year = {2016},
+}
+</pre>
+
+<!--
+<h2>Presentation slides</h2>
+<p>
+To appear later...
+</p>
+-->
+
+<h2>Acknowledgements</h2>
+<p>
+We thank Pieter Peers for providing helpful discussions in an early stage of this project. We also thank Ronit Reitshtein for helping in assembling the datasets. This work is supported by the Israel Science Foundation.
+</p>
+
+<p>
+Last update to the page: January 25, 2016.<br />
+</p>
+
+</body>
+</html>
